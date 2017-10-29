@@ -1,0 +1,55 @@
+@import "compass/css3";
+
+html {
+  background: #696969;
+}
+
+h1, h3 {
+  font-family: Calibri, Arial, serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+h1 {
+  font-size: 3.2em;
+}
+.buttons {
+  text-align: center;
+}
+.buttons button {
+  border: solid thin #333;
+  background: #ddd;
+  font-size: 2em;
+  min-width: 6.15em;
+}
+
+canvas{
+  background: #696969;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.buttons button:hover, .buttons button:active {
+  background: #aaa;
+}
+.pixel {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: solid thin rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+.pixel.alive {
+  border: none;
+  background: #333;
+}
+.board {
+  margin: 0 auto;
+  border: solid 1px rgb(255, 255, 255);
+  height: 1000px;
+  width: 1000px;
+}
